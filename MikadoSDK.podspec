@@ -13,7 +13,6 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Pretty Technical' => 'https://github.com/pretty-technical/MikadoSDKiOS.git' }
   s.source           = { :git => 'https://github.com/pretty-technical/MikadoSDKiOS.git',  :tag => "0.0.2" }
-  s.static_framework = true
   s.ios.deployment_target = '12.1'
   s.ios.vendored_frameworks = 'MikadoSDK.framework'
   s.dependency 'Alamofire', '~> 5.2'
