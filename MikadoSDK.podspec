@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MikadoSDK'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'MikadoSDK is a software development kit (SDK) for iOS gaming apps'
 
 
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/pretty-technical/MikadoSDKiOS.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Pretty Technical' => 'https://github.com/pretty-technical/MikadoSDKiOS.git' }
-  s.source           = { :git => 'https://github.com/pretty-technical/MikadoSDKiOS.git',  :tag => "0.0.2" }
+  s.source           = { :git => 'https://github.com/pretty-technical/MikadoSDKiOS.git',  :tag => "0.0.3" }
   s.ios.deployment_target = '12.1'
   s.ios.vendored_frameworks = 'MikadoSDK.framework'
   s.dependency 'Alamofire', '~> 5.2'
