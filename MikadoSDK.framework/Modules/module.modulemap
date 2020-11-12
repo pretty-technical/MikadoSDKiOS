@@ -1,0 +1,11 @@
+framework module MikadoSDK {
+  umbrella header "MikadoSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module MikadoSDK.Swift {
+    header "MikadoSDK-Swift.h"
+    requires objc
+}
