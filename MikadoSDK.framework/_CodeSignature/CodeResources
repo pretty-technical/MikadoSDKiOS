@@ -20,21 +20,13 @@
 		<data>
 		XtKsB/dQg2Sao1ZTLGuWquzkRgM=
 		</data>
-		<key>Modules/MikadoSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
-		<data>
-		dP5IsZJnBbaIFmnZD+Q6O8Jo4P0=
-		</data>
-		<key>Modules/MikadoSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		dP5IsZJnBbaIFmnZD+Q6O8Jo4P0=
-		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
 		4/JVnuCOy7l/z80mKTikY359hGo=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		8wYK7ndZEILTLM5FzpoXTrEX/4M=
+		QVhC66M8cWSoU8FL49QrbJz54LQ=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -42,7 +34,7 @@
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		8wYK7ndZEILTLM5FzpoXTrEX/4M=
+		QVhC66M8cWSoU8FL49QrbJz54LQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -72,20 +64,6 @@
 			qeNL0owm3bptoQuDOtJr/fTaboh7tChaFZguew0HzWY=
 			</data>
 		</dict>
-		<key>Modules/MikadoSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			U43i0UeJSyxvoU3zY1KCdd3APdRLewO85vBQCYNW2RU=
-			</data>
-		</dict>
-		<key>Modules/MikadoSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			U43i0UeJSyxvoU3zY1KCdd3APdRLewO85vBQCYNW2RU=
-			</data>
-		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
@@ -97,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AVa5jV0hGS0durxW8DG0bsegji1A2TdoLYaW70JtMa4=
+			Nlrws8OZuga4agwmY80/Ebdik78max0Oy8bzDeuYNhM=
 			</data>
 		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftdoc</key>
@@ -111,7 +89,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AVa5jV0hGS0durxW8DG0bsegji1A2TdoLYaW70JtMa4=
+			Nlrws8OZuga4agwmY80/Ebdik78max0Oy8bzDeuYNhM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
