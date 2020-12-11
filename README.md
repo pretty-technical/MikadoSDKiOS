@@ -42,7 +42,7 @@ To install it, open the terminal and execute `$ sudo gem install cocoapods`, the
 
 ### SDK
 
-After install Cocoapods, open the PodFile with the command `open podfile` and copy `pod 'MikadoSDK', :git => 'https://github.com/prettytechnical/MikadoSDKiOS.git', :tag => '0.0.3'`, then update the pods with `pod update` or `pod install` command.
+After install Cocoapods, open the PodFile with the command `open podfile` and copy `pod 'MikadoSDK', :git => 'https://github.com/prettytechnical/MikadoSDKiOS.git', :tag => '0.0.4'`, then update the pods with `pod update` or `pod install` command.
 
 ## Usage
 
