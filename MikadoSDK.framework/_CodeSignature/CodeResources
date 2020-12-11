@@ -8,9 +8,13 @@
 		<data>
 		bzXTnT6ZvRgamJBJoLjkvc8jtcU=
 		</data>
+		<key>CHANGELOG.md</key>
+		<data>
+		jBwJz4Q/PimJ704NmN2NhIFsEIk=
+		</data>
 		<key>Headers/MikadoSDK-Swift.h</key>
 		<data>
-		rdrTeT7IsxZX5Qq+4mm4AZ6C+tw=
+		EmYdrvKfdUehyy7CsW3rqMyDPps=
 		</data>
 		<key>Headers/MikadoSDK.h</key>
 		<data>
@@ -18,27 +22,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XtKsB/dQg2Sao1ZTLGuWquzkRgM=
+		fyFqMGKgPANuUIC+qj2d7NniW6s=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		4/JVnuCOy7l/z80mKTikY359hGo=
+		1NTDn2Vnaw7peWe/4p5PBwHmb7o=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		QVhC66M8cWSoU8FL49QrbJz54LQ=
+		Q0EndylIvlJ0RW6NCb7DIPNPPEw=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		4/JVnuCOy7l/z80mKTikY359hGo=
+		1NTDn2Vnaw7peWe/4p5PBwHmb7o=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		QVhC66M8cWSoU8FL49QrbJz54LQ=
+		Q0EndylIvlJ0RW6NCb7DIPNPPEw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		KTj6WqMLVvZZjbseOfMCQera6aE=
+		</data>
+		<key>README.md</key>
+		<data>
+		h2uXG1zurfSGx3sXrdmn7dwHVLk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -50,11 +58,18 @@
 			AM2RqIejD+o1yVnOIyoVYMsvFoC4rxlKmcS437kf5g8=
 			</data>
 		</dict>
+		<key>CHANGELOG.md</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6kvy/fkZDrHwLdXVQuwWsGIlmOdzyrlnOXOp86mWtTo=
+			</data>
+		</dict>
 		<key>Headers/MikadoSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8C8D6tQooPOYxNsgOHWeYAa4QgBcHBKZXnCXpAnusIc=
+			2Tub5hGN7bgy7um5kBBCF3W7LSK91FayHj3X9A37AUE=
 			</data>
 		</dict>
 		<key>Headers/MikadoSDK.h</key>
@@ -68,28 +83,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o3W09a2ZCabjkwHAOz+bNrPx3EEYDe58Qgf0/jfUIoY=
+			piJOlSi5Og2s4FKZTGPsBsn8Uhaot+wwZHESLEEbN1A=
 			</data>
 		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Nlrws8OZuga4agwmY80/Ebdik78max0Oy8bzDeuYNhM=
+			Jgx4r9C0DMa2dVULX9HXS3vx3UjxwzD/u5uGhnCD+8Q=
 			</data>
 		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o3W09a2ZCabjkwHAOz+bNrPx3EEYDe58Qgf0/jfUIoY=
+			piJOlSi5Og2s4FKZTGPsBsn8Uhaot+wwZHESLEEbN1A=
 			</data>
 		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Nlrws8OZuga4agwmY80/Ebdik78max0Oy8bzDeuYNhM=
+			Jgx4r9C0DMa2dVULX9HXS3vx3UjxwzD/u5uGhnCD+8Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -97,6 +112,13 @@
 			<key>hash2</key>
 			<data>
 			v8S2I69lDvX+Aq16/M+ya/75q7Rg3J0p37zpPxEca2I=
+			</data>
+		</dict>
+		<key>README.md</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yH8e97PEqPte7TbhXEEe/LCepk0CZbFsHaGfufxAI3g=
 			</data>
 		</dict>
 	</dict>
