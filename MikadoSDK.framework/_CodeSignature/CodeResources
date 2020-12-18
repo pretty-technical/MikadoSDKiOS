@@ -22,23 +22,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fyFqMGKgPANuUIC+qj2d7NniW6s=
+		rS0bEYouK1Na90IVNmZYCSCSSUw=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		1NTDn2Vnaw7peWe/4p5PBwHmb7o=
+		Gz6tsSFhnZ+EA2j8y4Nh+XPBpHk=
+		</data>
+		<key>Modules/MikadoSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<data>
+		aZbr0wcVXtSxmKQbPpFb5POKuvo=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Q0EndylIvlJ0RW6NCb7DIPNPPEw=
+		D8on1JNyMSF8SeN2xJJp92u7rdI=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		1NTDn2Vnaw7peWe/4p5PBwHmb7o=
+		Gz6tsSFhnZ+EA2j8y4Nh+XPBpHk=
+		</data>
+		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftinterface</key>
+		<data>
+		aZbr0wcVXtSxmKQbPpFb5POKuvo=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Q0EndylIvlJ0RW6NCb7DIPNPPEw=
+		D8on1JNyMSF8SeN2xJJp92u7rdI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,28 +91,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			piJOlSi5Og2s4FKZTGPsBsn8Uhaot+wwZHESLEEbN1A=
+			CtV2Ey8Erysc9+ZvWSiHtv22+jIJbfo/sCpbLR5GbKw=
+			</data>
+		</dict>
+		<key>Modules/MikadoSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4aTVkJgFpES5Qi6XLvxQ74dW8DU9N9wefSQD03EEAak=
 			</data>
 		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jgx4r9C0DMa2dVULX9HXS3vx3UjxwzD/u5uGhnCD+8Q=
+			KAq2a8Y7MtOuIPEUrQMkYOyssAjIBdgxNm7ZYGmTV48=
 			</data>
 		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			piJOlSi5Og2s4FKZTGPsBsn8Uhaot+wwZHESLEEbN1A=
+			CtV2Ey8Erysc9+ZvWSiHtv22+jIJbfo/sCpbLR5GbKw=
+			</data>
+		</dict>
+		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4aTVkJgFpES5Qi6XLvxQ74dW8DU9N9wefSQD03EEAak=
 			</data>
 		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jgx4r9C0DMa2dVULX9HXS3vx3UjxwzD/u5uGhnCD+8Q=
+			KAq2a8Y7MtOuIPEUrQMkYOyssAjIBdgxNm7ZYGmTV48=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
