@@ -1,0 +1,19 @@
+{
+  "company_id": "22e9b46f-c7b8-11ea-9d84-645106a1180e",
+  "first_name": "Lukas",
+  "last_name": "Modric",
+  "date_of_birth": "1997-09-17T00:00:00.000Z",
+  "contact_number": "string",
+  "country": "USA",
+  "address": "string",
+  "city": "string",
+  "post_code": "string",
+  "email": "lmodric@prettytechnical.io",
+  "password": "123456",
+  "currency_id": "1",
+  "offer_email": true,
+  "email_verified": true,
+  "id_verified": true,
+  "twitter": "@player",
+  "instagram": "@player"
+}

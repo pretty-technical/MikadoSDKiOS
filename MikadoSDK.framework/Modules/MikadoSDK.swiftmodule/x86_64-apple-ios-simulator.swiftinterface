@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
 // swift-module-flags: -target x86_64-apple-ios12.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name MikadoSDK
 import Alamofire
 import Foundation
@@ -52,8 +52,17 @@ public enum GameUseCaseError : Swift.Error {
 }
 @_hasMissingDesignatedInitializers public class UtilsUseCase : MikadoSDK.BaseInteractor {
   public var currencyList: MikadoSDK.Observable<[MikadoSDK.CurrencyEntity]?>
+  public var balance: MikadoSDK.Observable<MikadoSDK.BalanceEntity?>
   public func getCurrencyList(result: @escaping (() throws -> Swift.Void) -> Swift.Void)
   @objc deinit
+}
+public struct BalanceEntity : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension BalanceEntity {
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
 }
 public struct CurrencyEntity : Swift.Codable {
   public let identifier: Swift.String?, numericCode: Swift.String?, alphabeticCode: Swift.String?, countryInstitution: Swift.String?
@@ -145,6 +154,7 @@ public enum ApiEnvironment {
   }
   public func initialize(api: MikadoSDK.ApiEnvironment)
   public func downloadGameList()
+  public func downloadMoreGameList()
   @objc deinit
 }
 public struct Player : Swift.Codable {
