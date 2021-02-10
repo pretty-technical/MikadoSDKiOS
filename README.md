@@ -154,7 +154,7 @@ Mikado.instance.player.userInformation.observe(on: self) { user in
 The sign up module gets the user information and return the user profile information and access token or an exceptions if something went wrong. 
 
 To implement the sign up in your project, just with `Mikado.instance.player.signUp(userEntity: SignUpEntity?, result: @escaping (() throws -> Void) -> Void)` where it just need the user information as `SignUpEntity` model. Because the method has an autoclosure, is necessary to execute the result, for example:
-``` swift
+``` Swift
 do {
     try result()
 } catch {
@@ -197,7 +197,7 @@ When the sign up is successful, the method will call the login method with the e
 The game list module is for get the list of games available to the user. 
 
 To implement the game list in your project, just with `Mikado.instance.arcade.getGameList(result: @escaping (() throws -> Void) -> Void)` where it does not request any parameters. Because the method has an autoclosure, is necessary to execute the result, for example:
-```
+```Swift
 do {
     try result()
 } catch {
@@ -216,7 +216,7 @@ The game list method can return the following exceptions:
 #### Success Result
 
 When the game list is successful, the method will save the list in a observable that can be called as:
-``` swift
+``` Swift
 Mikado.instance.arcade.gameList.observe(on: self) { gameList in
     guard let gameList  = gameList else {
         return
@@ -228,7 +228,7 @@ Mikado.instance.arcade.gameList.observe(on: self) { gameList in
 The game launch module is used to launch the game the user select. 
 
 To implement the launch game in your project, just with `Mikado.instance.arcade.launchGame(result: @escaping (() throws -> Void) -> Void)` where it does not request any parameters. Because the method has an autoclsoure, is necessary to execute the result, for example:
-```. swift
+```Swift
 do {
     let url = try result()
 } catch {
