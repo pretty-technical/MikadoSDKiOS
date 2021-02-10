@@ -24,6 +24,8 @@
 
     - [Game Launch](#Game-Launch)
 
+    - [Balance Amount](#Balance-Amount)
+
 - [External Library](#external-library)
 
 
@@ -42,11 +44,16 @@ To install it, open the terminal and execute `$ sudo gem install cocoapods`, the
 
 ### SDK
 
-After install Cocoapods, open the PodFile with the command `open podfile` and copy `pod 'MikadoSDK', :git => 'https://github.com/prettytechnical/MikadoSDKiOS.git', :tag => '0.0.5'`, then update the pods with `pod update` or `pod install` command.
+After install Cocoapods, open the PodFile with the command `open podfile` and copy `pod 'MikadoSDK'`, then update the pods with `pod update` or `pod install` command.
 
 ## Usage
 
-Mikado SDK is really simple to setup in the project. In the `AppDelegate` declare `Mikado.instance.initialize()` which will automatically validate if the user's session has expired and get the currency list. The SDK also has other methods that can be implemented inside the project, these are:
+Mikado SDK is really simple to setup in the project. In the `AppDelegate` declare `Mikado.instance.initialize(api: ApiEnvironment)` which will automatically validate if the user's session has expired and get the currency list. The `initialize(api: ApiEnvironment)` method need as a parameter the API environment, which are:
+- `ApiEnvironment.PROD`
+- `ApiEnvironment.DEV`
+- `ApiEnvironment.STG`
+
+The SDK also has other methods that can be implemented inside the project, these are:
 
 - `Mikado.instance.hasSession()`
 - `Mikado.instance.downloadGameList()`
@@ -223,7 +230,7 @@ The game launch module is used to launch the game the user select.
 To implement the launch game in your project, just with `Mikado.instance.arcade.launchGame(result: @escaping (() throws -> Void) -> Void)` where it does not request any parameters. Because the method has an autoclsoure, is necessary to execute the result, for example:
 ```swift
 do {
-    try result()
+    let url = try result()
 } catch {
     print(error.localizedDescription)
 }
@@ -241,6 +248,37 @@ The launch game method could return the following exceptions:
 
 When the launch game is successful, it will return the game url to access it (you should use a safari view).
 
+### Balance Amount
+The balance amount module is used to get the user amount of points.
+
+To implement the get balance in your project, just with `Mikado.instance.utils.getBalance(result: @escaping (() throws -> Void) -> Void)` where it does not request any parameters. Because the method has an autoclsoure, is necessary to execute the result, for example:
+```swift
+do {
+    try result()
+} catch {
+    print(error.localizedDescription)
+}
+```
+
+#### Exceptions
+
+The balance method could return the following exceptions:
+
+- `internalError`
+- `invalidCredentials`
+- `weakSelfError`
+
+#### Success Result
+
+When get the balance is successful, the method will save the amount in a observable that can be called as:
+``` swift
+Mikado.instance.utils.balance.observe(on: self) { balance in
+    guard let balance  = balance else {
+        return
+    }
+}
+``` 
+
 ## External Library
 
 | Plugin | Version | Site |
@@ -248,6 +286,3 @@ When the launch game is successful, it will return the game url to access it (yo
 | Alamofire | 4.7 | https://github.com/Alamofire/Alamofire |
 | SwiftLint | 0.39.2 | https://github.com/realm/SwiftLint |
 | SwiftKeychainWrapper | 3.4 | https://github.com/jrendel/SwiftKeychainWrapper |
-
-
-
