@@ -1,0 +1,16 @@
+{
+  "result": [
+    {
+      "id": "22e9b46f-c7b8-11ea-9d84-645106a1180e",
+      "wallet_id": "22e9b46f-c7b8-11ea-9d84-645106a1180e",
+      "period_year": "1990",
+      "period_month": "11",
+      "amount": 250.5,
+      "player_id": "22e9b46f-c7b8-11ea-9d84-645106a1180e",
+      "currency_id": "22e9b46f-c7b8-11ea-9d84-645106a1180e",
+      "alphabetic_code": "MKD",
+      "created_at": "2019-12-11T19:22:49.503Z",
+      "updated_at": "2019-12-11T19:22:49.503Z"
+    }
+  ]
+}

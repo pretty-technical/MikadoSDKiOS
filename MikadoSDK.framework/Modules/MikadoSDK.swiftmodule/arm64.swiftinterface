@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
 // swift-module-flags: -target arm64-apple-ios12.1 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MikadoSDK
 import Alamofire
 import Foundation
@@ -19,6 +19,27 @@ final public class Observable<Value> {
 @_hasMissingDesignatedInitializers public class BaseInteractor {
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class PlayerUseCase : MikadoSDK.BaseInteractor {
+  public var userInformation: MikadoSDK.Observable<MikadoSDK.Player?>
+  public var islogin: MikadoSDK.Observable<Swift.Bool> {
+    get
+    set
+  }
+  public func logIn(email: Swift.String, password: Swift.String, result: @escaping (() throws -> Swift.Void) -> Swift.Void)
+  public func signUp(userEntity: MikadoSDK.SignUpEntity?, result: @escaping (() throws -> Swift.Void) -> Swift.Void)
+  public func logOut()
+  public func getToken() -> Swift.String
+  public func getPassword() -> Swift.String
+  public func getEmail() -> Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class UtilsUseCase : MikadoSDK.BaseInteractor {
+  public var currencyList: MikadoSDK.Observable<[MikadoSDK.CurrencyEntity]?>
+  public var balance: MikadoSDK.Observable<Swift.Double?>
+  public func getCurrencyList(result: @escaping (() throws -> Swift.Void) -> Swift.Void)
+  public func getBalance(result: @escaping (() throws -> Swift.Void) -> Swift.Void)
+  @objc deinit
+}
 public struct GameEntity : Swift.Codable {
   public let identifier: Swift.Int?
   public let slug: Swift.String?, gameID: Swift.String?, name: Swift.String?, image: Swift.String?
@@ -34,26 +55,13 @@ extension GameEntity {
   public func jsonData() throws -> Foundation.Data
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
 }
-public enum GameUseCaseError : Swift.Error {
-  case internalError
-  case invalidCredentials
-  case weakSelfError
-  public static func == (a: MikadoSDK.GameUseCaseError, b: MikadoSDK.GameUseCaseError) -> Swift.Bool
-  public var hashValue: Swift.Int {
-    get
-  }
-  public func hash(into hasher: inout Swift.Hasher)
+public struct BalanceEntity : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
-@_hasMissingDesignatedInitializers public class GameUseCase : MikadoSDK.BaseInteractor {
-  public var gameList: MikadoSDK.Observable<Swift.Result<[MikadoSDK.GameEntity]?, MikadoSDK.GameUseCaseError>>
-  public func getGameList()
-  public func launchGame(gameID: Swift.String?, providerID: Swift.Int?, providerSlug: Swift.String?, result: @escaping (() throws -> Swift.String?) -> Swift.Void)
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class UtilsUseCase : MikadoSDK.BaseInteractor {
-  public var currencyList: MikadoSDK.Observable<[MikadoSDK.CurrencyEntity]?>
-  public func getCurrencyList(result: @escaping (() throws -> Swift.Void) -> Swift.Void)
-  @objc deinit
+extension BalanceEntity {
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
 }
 public struct CurrencyEntity : Swift.Codable {
   public let identifier: Swift.String?, numericCode: Swift.String?, alphabeticCode: Swift.String?, countryInstitution: Swift.String?
@@ -91,18 +99,20 @@ extension LogInEntity {
   public func jsonData() throws -> Foundation.Data
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
 }
-@_hasMissingDesignatedInitializers public class PlayerUseCase : MikadoSDK.BaseInteractor {
-  public var userInformation: MikadoSDK.Observable<MikadoSDK.Player?>
-  public var islogin: MikadoSDK.Observable<Swift.Bool> {
+public enum GameUseCaseError : Swift.Error {
+  case internalError
+  case invalidCredentials
+  case weakSelfError
+  public static func == (a: MikadoSDK.GameUseCaseError, b: MikadoSDK.GameUseCaseError) -> Swift.Bool
+  public var hashValue: Swift.Int {
     get
-    set
   }
-  public func logIn(email: Swift.String, password: Swift.String, result: @escaping (() throws -> Swift.Void) -> Swift.Void)
-  public func signUp(userEntity: MikadoSDK.SignUpEntity?, result: @escaping (() throws -> Swift.Void) -> Swift.Void)
-  public func logOut()
-  public func getToken() -> Swift.String
-  public func getPassword() -> Swift.String
-  public func getEmail() -> Swift.String
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@_hasMissingDesignatedInitializers public class GameUseCase : MikadoSDK.BaseInteractor {
+  public var gameList: MikadoSDK.Observable<Swift.Result<[MikadoSDK.GameEntity]?, MikadoSDK.GameUseCaseError>>
+  public func getGameList()
+  public func launchGame(gameID: Swift.String?, providerID: Swift.Int?, providerSlug: Swift.String?, result: @escaping (() throws -> Swift.String?) -> Swift.Void)
   @objc deinit
 }
 public struct LaunchGameEntity : Swift.Codable {
@@ -145,6 +155,7 @@ public enum ApiEnvironment {
   }
   public func initialize(api: MikadoSDK.ApiEnvironment)
   public func downloadGameList()
+  public func downloadMoreGameList()
   @objc deinit
 }
 public struct Player : Swift.Codable {

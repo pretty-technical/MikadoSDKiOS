@@ -10,11 +10,11 @@
 		</data>
 		<key>CHANGELOG.md</key>
 		<data>
-		jBwJz4Q/PimJ704NmN2NhIFsEIk=
+		N8kAHguR3M5SYtgUN9kyS0huQpw=
 		</data>
 		<key>Headers/MikadoSDK-Swift.h</key>
 		<data>
-		EmYdrvKfdUehyy7CsW3rqMyDPps=
+		HjO/0WaFJbOjw71uI5N/cCBaIeI=
 		</data>
 		<key>Headers/MikadoSDK.h</key>
 		<data>
@@ -22,31 +22,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rS0bEYouK1Na90IVNmZYCSCSSUw=
+		udQonYO45PZTLp7UB7gXqrDuXZo=
+		</data>
+		<key>MockData/Balance.json</key>
+		<data>
+		auVPMRmuGqb+bG/jYV6hnCHjAv4=
+		</data>
+		<key>MockData/CurrencyList.json</key>
+		<data>
+		91xg/ggclw29PGJ7yqsvWRCgGNE=
+		</data>
+		<key>MockData/GameList.json</key>
+		<data>
+		wPHtciJZkbmPnGWDmSKOBJsQLMU=
+		</data>
+		<key>MockData/LaunchGame.json</key>
+		<data>
+		TINiQigVhU8HsC534wupFA/h4rI=
+		</data>
+		<key>MockData/UserInformation.json</key>
+		<data>
+		EgTrWYqjjcb2Kcdsb5908vQYmjs=
+		</data>
+		<key>MockData/UserRegistration.json</key>
+		<data>
+		PQFdiZbnsgquflE3v0KFQ7GoIAo=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		Gz6tsSFhnZ+EA2j8y4Nh+XPBpHk=
+		NuMvXh2FUT97OsLGMbwG3GiK9fY=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		aZbr0wcVXtSxmKQbPpFb5POKuvo=
+		D6gvM1p7wdZP3CQ5zpzOw2jgXNk=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		D8on1JNyMSF8SeN2xJJp92u7rdI=
+		+s/pmfS8MbBdIIzBIds6ISI4j1w=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		Gz6tsSFhnZ+EA2j8y4Nh+XPBpHk=
+		NuMvXh2FUT97OsLGMbwG3GiK9fY=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		aZbr0wcVXtSxmKQbPpFb5POKuvo=
+		D6gvM1p7wdZP3CQ5zpzOw2jgXNk=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		D8on1JNyMSF8SeN2xJJp92u7rdI=
+		+s/pmfS8MbBdIIzBIds6ISI4j1w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,14 +94,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6kvy/fkZDrHwLdXVQuwWsGIlmOdzyrlnOXOp86mWtTo=
+			GDdSxmh/GqaE1ZgwWjnPQy3YPQ1owP7hSVF4WGdoi50=
 			</data>
 		</dict>
 		<key>Headers/MikadoSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2Tub5hGN7bgy7um5kBBCF3W7LSK91FayHj3X9A37AUE=
+			p3XRMjJql3brjcHv0v4PI40wBblG0c+tVrAOm2RkNhs=
 			</data>
 		</dict>
 		<key>Headers/MikadoSDK.h</key>
@@ -87,46 +111,88 @@
 			qeNL0owm3bptoQuDOtJr/fTaboh7tChaFZguew0HzWY=
 			</data>
 		</dict>
+		<key>MockData/Balance.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ghHOyiCbkUacYOtzcmxpGDklhh0WiotfCxyCrmEnuMs=
+			</data>
+		</dict>
+		<key>MockData/CurrencyList.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vSdgTuwQRmg3B+doAbg3q1j0A0kRSH1dmkLkq8cgU68=
+			</data>
+		</dict>
+		<key>MockData/GameList.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2N2KNXcTY4vSWSBYv7JvUdIkVijN+7lQpYOJMR9rbsg=
+			</data>
+		</dict>
+		<key>MockData/LaunchGame.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4LF6Q1CI9vxWd92Ml+NKTb0S/Fyk7Ok3848MOfbDDxs=
+			</data>
+		</dict>
+		<key>MockData/UserInformation.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eyzGcWt14dYQIls8N7Ymqkd21UJRfssYvCVbELXd9WU=
+			</data>
+		</dict>
+		<key>MockData/UserRegistration.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yPQTDdDieoc6W8hlWs4JOZrLaxEUbKH4abonZOuzHmg=
+			</data>
+		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CtV2Ey8Erysc9+ZvWSiHtv22+jIJbfo/sCpbLR5GbKw=
+			AKSxmhxP8LfPD2clv5akkrjA8VoCnEng9EUYJroy5cQ=
 			</data>
 		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4aTVkJgFpES5Qi6XLvxQ74dW8DU9N9wefSQD03EEAak=
+			DzhajMnlCbejpNYwUqwmth9zCPpcOv62YIAZ+XPIWm8=
 			</data>
 		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KAq2a8Y7MtOuIPEUrQMkYOyssAjIBdgxNm7ZYGmTV48=
+			Uf/Z+xHyUG1e92MmKpqwZZAsHwtnrgSZhwEWr8BJIdc=
 			</data>
 		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CtV2Ey8Erysc9+ZvWSiHtv22+jIJbfo/sCpbLR5GbKw=
+			AKSxmhxP8LfPD2clv5akkrjA8VoCnEng9EUYJroy5cQ=
 			</data>
 		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4aTVkJgFpES5Qi6XLvxQ74dW8DU9N9wefSQD03EEAak=
+			DzhajMnlCbejpNYwUqwmth9zCPpcOv62YIAZ+XPIWm8=
 			</data>
 		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KAq2a8Y7MtOuIPEUrQMkYOyssAjIBdgxNm7ZYGmTV48=
+			Uf/Z+xHyUG1e92MmKpqwZZAsHwtnrgSZhwEWr8BJIdc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -1,0 +1,27 @@
+{
+    "result": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBjZTYxMzRmLTNmY2YtMTFlYi05ZWY5LTAyNDJjMGE4ODAwNyJ9.LrGgOyHZnJxmTmPCUvUrQFXOZope-nLT_ppGSkW3YmY",
+        "player": {
+            "id": "0ce6134f-3fcf-11eb-9ef9-0242c0a88007",
+            "customer_id": "102060",
+            "first_name": "Angel",
+            "last_name": "Di maria",
+            "gender": "",
+            "date_of_birth": "1994-12-01T19:45:00Z",
+            "contact_number": "172912793",
+            "country": "Argentina",
+            "address": "Paris france",
+            "city": "Paris",
+            "post_code": "50002",
+            "email": "dimaria@prettytechnical.io",
+            "currency_id": "1",
+            "offer_email": true,
+            "email_verified": false,
+            "won_bts": 0,
+            "won_survivor": 0,
+            "created_at": "2020-12-16T18:46:47.382883Z",
+            "updated_at": "2020-12-16T18:46:47.382883Z"
+        },
+        "first_login": false
+    }
+}
