@@ -228,7 +228,7 @@ Mikado.instance.arcade.gameList.observe(on: self) { gameList in
 The game launch module is used to launch the game the user select. 
 
 To implement the launch game in your project, just with `Mikado.instance.arcade.launchGame(result: @escaping (() throws -> Void) -> Void)` where it does not request any parameters. Because the method has an autoclsoure, is necessary to execute the result, for example:
-```swift
+```. swift
 do {
     let url = try result()
 } catch {
