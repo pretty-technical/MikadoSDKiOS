@@ -17,5 +17,6 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks = 'MikadoSDK.framework'
   s.dependency 'Alamofire', '~> 5.2'
   s.dependency 'SwiftKeychainWrapper'
+  s.dependency 'SwiftyBeaver'
   s.swift_version = "5" 
 end
