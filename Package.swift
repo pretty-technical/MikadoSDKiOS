@@ -12,7 +12,9 @@ let package = Package(
             targets: ["MikadoSDK"])
     ],
     dependencies: [
-            // Dependencies declare other packages that this package depends on.
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.4.0")),
+        .package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver.git", .upToNextMajor(from: "1.9.0")),
+
     ],
     targets: [
         .binaryTarget(
