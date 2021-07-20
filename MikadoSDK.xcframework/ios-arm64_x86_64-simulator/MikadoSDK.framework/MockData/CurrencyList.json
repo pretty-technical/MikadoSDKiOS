@@ -1,0 +1,33 @@
+{
+    "result": [
+        {
+            "id": "80706c11-6472-41df-a7b8-da81a9a019c7",
+            "numeric_code": "1111",
+            "alphabetic_code": "BTC",
+            "country_institution": "BTC",
+            "denomination": "Bitcoin",
+            "minor_unit": "2",
+            "created_at": "2020-12-11T19:07:59.517269Z",
+            "updated_at": "2020-12-11T19:07:59.517269Z"
+        },
+        {
+            "id": "d64b37be-4ae4-11eb-bdd0-0242c0a8e007",
+            "numeric_code": "9999",
+            "alphabetic_code": "USD",
+            "country_institution": "USA",
+            "denomination": "Dollar",
+            "created_at": "2020-12-30T21:20:27.321187Z",
+            "updated_at": "2020-12-30T21:20:27.321187Z"
+        },
+        {
+            "id": "1",
+            "numeric_code": "9999",
+            "alphabetic_code": "PTS",
+            "country_institution": "ITP",
+            "denomination": "ITP Points",
+            "minor_unit": "2",
+            "created_at": "2020-12-09T21:17:41.759624Z",
+            "updated_at": "2020-12-09T21:17:41.867846Z"
+        }
+    ]
+}
