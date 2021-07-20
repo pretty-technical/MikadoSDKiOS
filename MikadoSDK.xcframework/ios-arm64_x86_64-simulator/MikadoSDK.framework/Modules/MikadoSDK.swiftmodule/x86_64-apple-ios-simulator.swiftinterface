@@ -1,0 +1,187 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-module-flags: -target x86_64-apple-ios12.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MikadoSDK
+import Alamofire
+import Foundation
+@_exported import MikadoSDK
+import Swift
+import SwiftKeychainWrapper
+import SwiftyBeaver
+final public class Observable<Value> {
+  final public var value: Value {
+    get
+    set
+  }
+  public init(_ value: Value)
+  final public func observe(on observer: Swift.AnyObject, observerBlock: @escaping (Value) -> Swift.Void)
+  final public func remove(observer: Swift.AnyObject)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class BaseUseCase {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PlayerUseCase : MikadoSDK.BaseUseCase {
+  public var userInformation: MikadoSDK.Observable<MikadoSDK.Player?>
+  public var islogin: MikadoSDK.Observable<Swift.Bool> {
+    get
+    set
+  }
+  public func logIn(email: Swift.String, password: Swift.String, result: @escaping (() throws -> Swift.Void) -> Swift.Void)
+  public func signUp(userEntity: MikadoSDK.SignUpEntity?, result: @escaping (() throws -> Swift.Void) -> Swift.Void)
+  public func logOut()
+  public func getToken() -> Swift.String
+  public func getPassword() -> Swift.String
+  public func getEmail() -> Swift.String
+  public func verifyEmail(result: @escaping (() throws -> Swift.Void) -> Swift.Void)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class UtilsUseCase : MikadoSDK.BaseUseCase {
+  public var currencyList: MikadoSDK.Observable<[MikadoSDK.CurrencyEntity]?>
+  public var balance: MikadoSDK.Observable<Swift.Double?>
+  public func getCurrencyList(result: @escaping (() throws -> Swift.Void) -> Swift.Void)
+  public func getBalance(result: @escaping (() throws -> Swift.Void) -> Swift.Void)
+  @objc deinit
+}
+public struct GameEntity : Swift.Codable {
+  public let identifier: Swift.Int?
+  public let slug: Swift.String?, gameID: Swift.String?, name: Swift.String?, image: Swift.String?
+  public let type: Swift.String?, gameEntityDescription: Swift.String?
+  public let isDesktop: Swift.Bool?, isMobile: Swift.Bool?, isNew: Swift.Bool?, freeGamesSupport: Swift.Bool?
+  public let rank: Swift.Int?, providerID: Swift.Int?
+  public let providerName: Swift.String?, providerSlug: Swift.String?
+  public let isFavorite: Swift.Bool?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension GameEntity {
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+}
+public struct BalanceEntity : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension BalanceEntity {
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+}
+public struct CurrencyEntity : Swift.Codable {
+  public let identifier: Swift.String?, numericCode: Swift.String?, alphabeticCode: Swift.String?, countryInstitution: Swift.String?
+  public let denomination: Swift.String?, minorUnit: Swift.String?, createdAt: Swift.String?, updatedAt: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CurrencyEntity {
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+}
+public struct SignUpEntity : Swift.Codable {
+  public let companyID: Swift.String?, firstName: Swift.String?, lastName: Swift.String?, dateOfBirth: Swift.String?
+  public let contactNumber: Swift.String?, country: Swift.String?, address: Swift.String?, city: Swift.String?
+  public let postCode: Swift.String?, email: Swift.String?, password: Swift.String?, currencyID: Swift.String?
+  public let offerEmail: Swift.Bool?, emailVerified: Swift.Bool?, idVerified: Swift.Bool?
+  public init(companyID: Swift.String?, firstName: Swift.String?, lastName: Swift.String?, dateOfBirth: Swift.String?, contactNumber: Swift.String?, country: Swift.String?, address: Swift.String?, city: Swift.String?, postCode: Swift.String?, email: Swift.String?, password: Swift.String?, currencyID: Swift.String?, offerEmail: Swift.Bool?, emailVerified: Swift.Bool?, idVerified: Swift.Bool?)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension SignUpEntity {
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+  public func jsonDictonary() throws -> [Swift.String : Any]?
+}
+public struct LogInEntity : Swift.Codable {
+  public let token: Swift.String?
+  public let player: MikadoSDK.Player?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension LogInEntity {
+  public init(data: Foundation.Data) throws
+  public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+}
+public enum GameUseCaseError : Swift.Error {
+  case internalError
+  case invalidCredentials
+  case weakSelfError
+  public static func == (a: MikadoSDK.GameUseCaseError, b: MikadoSDK.GameUseCaseError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class GameUseCase : MikadoSDK.BaseUseCase {
+  public var gameList: MikadoSDK.Observable<Swift.Result<[MikadoSDK.GameEntity]?, MikadoSDK.GameUseCaseError>>
+  public func getGameList()
+  public func launchGame(gameID: Swift.String?, providerID: Swift.Int?, providerSlug: Swift.String?, result: @escaping (() throws -> Swift.String?) -> Swift.Void)
+  @objc deinit
+}
+public struct LaunchGameEntity : Swift.Codable {
+  public let isDemo: Swift.Bool?
+  public let userID: Swift.Int?
+  public let gameID: Swift.String?
+  public let providerID: Swift.Int?
+  public let providerSlug: Swift.String?, userLanguage: Swift.String?, userCurrency: Swift.String?, lobbyURL: Swift.String?
+  public let isMobile: Swift.Int?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension LaunchGameEntity {
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+}
+public enum ApiEnvironment {
+  case DEV
+  case PROD
+  case STG
+  public static func == (a: MikadoSDK.ApiEnvironment, b: MikadoSDK.ApiEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class Mikado {
+  public static let instance: MikadoSDK.Mikado
+  public var player: MikadoSDK.PlayerUseCase {
+    get
+    set
+  }
+  public var arcade: MikadoSDK.GameUseCase {
+    get
+    set
+  }
+  public var utils: MikadoSDK.UtilsUseCase {
+    get
+    set
+  }
+  public func initialize(api: MikadoSDK.ApiEnvironment)
+  public func downloadGameList()
+  public func downloadMoreGameList()
+  @objc deinit
+}
+public struct EditProfileEntity : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension EditProfileEntity {
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+  public func jsonDictonary() throws -> [Swift.String : Any]?
+}
+@_hasMissingDesignatedInitializers public class BaseService {
+  @objc deinit
+}
+public struct Player : Swift.Codable {
+  public let identifier: Swift.String?, companyID: Swift.String?, firstName: Swift.String?, lastName: Swift.String?
+  public let dateOfBirth: Swift.String?, contactNumber: Swift.String?, country: Swift.String?, address: Swift.String?
+  public let city: Swift.String?, postCode: Swift.String?, email: Swift.String?, currencyID: Swift.String?
+  public let offerEmail: Swift.Bool?, emailVerified: Swift.Bool?, idVerified: Swift.Bool?
+  public let createdAt: Swift.String?, updatedAt: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension MikadoSDK.GameUseCaseError : Swift.Equatable {}
+extension MikadoSDK.GameUseCaseError : Swift.Hashable {}
+extension MikadoSDK.ApiEnvironment : Swift.Equatable {}
+extension MikadoSDK.ApiEnvironment : Swift.Hashable {}
