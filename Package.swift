@@ -1,9 +1,10 @@
+// swift-tools-version:5.4.0
 import PackageDescription
-// swift-tools-version:5.3
+
 let package = Package(
     name: "MikadoSDK",
     platforms: [
-        .iOS(.v12.1)
+        .iOS(.v12)
     ],
     products: [
         .library(
