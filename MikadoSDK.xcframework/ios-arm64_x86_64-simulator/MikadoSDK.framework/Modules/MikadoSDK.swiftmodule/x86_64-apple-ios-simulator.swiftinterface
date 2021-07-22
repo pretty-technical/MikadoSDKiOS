@@ -4,7 +4,6 @@
 import Foundation
 @_exported import MikadoSDK
 import Swift
-import SwiftKeychainWrapper
 final public class Observable<Value> {
   final public var value: Value {
     get
