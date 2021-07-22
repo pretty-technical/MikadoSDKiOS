@@ -1,12 +1,10 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target arm64-apple-ios12.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MikadoSDK
-import Alamofire
 import Foundation
 @_exported import MikadoSDK
 import Swift
 import SwiftKeychainWrapper
-import SwiftyBeaver
 final public class Observable<Value> {
   final public var value: Value {
     get

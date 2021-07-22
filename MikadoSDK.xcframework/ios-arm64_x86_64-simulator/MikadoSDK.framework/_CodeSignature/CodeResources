@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		jS6eJ2eV/AEw/eqieIc6AiPQYuM=
+		Y1m6mp7lVnDC1v11ylRe62f47Io=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1YE7AxrpSl93HWSqCmclbcQCeUM=
+		vgnYyQZMh6flR7PoVLXr0TZm9uo=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		jS6eJ2eV/AEw/eqieIc6AiPQYuM=
+		Y1m6mp7lVnDC1v11ylRe62f47Io=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		1YE7AxrpSl93HWSqCmclbcQCeUM=
+		vgnYyQZMh6flR7PoVLXr0TZm9uo=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -86,11 +86,11 @@
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		SFMuooAgYmdkS0WQ49p0U6w3XAU=
+		rVnhhHnLXf3t4Y1HCFy307ckuwY=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		su4ibRektabi3vD++dU1mKL8OS0=
+		Q8vS8rPEDwjhwyGwIghYT9iKgm4=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -98,11 +98,11 @@
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		SFMuooAgYmdkS0WQ49p0U6w3XAU=
+		rVnhhHnLXf3t4Y1HCFy307ckuwY=
 		</data>
 		<key>Modules/MikadoSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		su4ibRektabi3vD++dU1mKL8OS0=
+		Q8vS8rPEDwjhwyGwIghYT9iKgm4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -210,14 +210,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oTOQk4ZSjICitmoemVMESWh2tPLjJ8U2WWnMl/EKVQw=
+			/C8ZQXJQVbU9YVo0qqtrp+OUcJzsVowdtwn3gIK+7Qs=
 			</data>
 		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p+l7dHEn9ByZObq3gC2nrrDElIUfN7hZds6P5vJgq4k=
+			vii0pfzjjgo4uD8cr1IFDTFWe7qmjSH7DVIZSENRLxg=
 			</data>
 		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftdoc</key>
@@ -231,14 +231,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oTOQk4ZSjICitmoemVMESWh2tPLjJ8U2WWnMl/EKVQw=
+			/C8ZQXJQVbU9YVo0qqtrp+OUcJzsVowdtwn3gIK+7Qs=
 			</data>
 		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p+l7dHEn9ByZObq3gC2nrrDElIUfN7hZds6P5vJgq4k=
+			vii0pfzjjgo4uD8cr1IFDTFWe7qmjSH7DVIZSENRLxg=
 			</data>
 		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -252,14 +252,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QLhEqq9PfTAiU7SSfWR5hwMPnrHhqySLuwkapMzy0qg=
+			RV6Jw9p4WE/wyzzGO2K+vFUjRrYQgJSDOFdCYjzfGCY=
 			</data>
 		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tMnw1EVUDusPbkYrQW5+PRscAaSZ2cAy0iNPZI5yjXs=
+			Tf3lakqlmt8cfKW1amLd9vtRlvbbHhlPF4iAUqx+UwM=
 			</data>
 		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -273,14 +273,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QLhEqq9PfTAiU7SSfWR5hwMPnrHhqySLuwkapMzy0qg=
+			RV6Jw9p4WE/wyzzGO2K+vFUjRrYQgJSDOFdCYjzfGCY=
 			</data>
 		</dict>
 		<key>Modules/MikadoSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tMnw1EVUDusPbkYrQW5+PRscAaSZ2cAy0iNPZI5yjXs=
+			Tf3lakqlmt8cfKW1amLd9vtRlvbbHhlPF4iAUqx+UwM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
