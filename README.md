@@ -46,6 +46,18 @@ To install it, open the terminal and execute `$ sudo gem install cocoapods`, the
 
 After install Cocoapods, open the PodFile with the command `open podfile` and copy `pod 'MikadoSDK'`, then update the pods with `pod update` or `pod install` command.
 
+### Swift Package Manager
+
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler. It is in early development, but Alamofire does support its use on supported platforms.
+
+Once you have your Swift package set up, adding Alamofire as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`.
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/pretty-technical/MikadoSDKiOS.git", .upToNextMajor(from: "0.0.7"))
+]
+```
+
 ## Usage
 
 Mikado SDK is really simple to setup in the project. In the `AppDelegate` declare `Mikado.instance.initialize(api: ApiEnvironment)` which will automatically validate if the user's session has expired and get the currency list. The `initialize(api: ApiEnvironment)` method need as a parameter the API environment, which are:
