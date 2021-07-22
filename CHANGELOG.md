@@ -1,3 +1,10 @@
+## Version 0.0.7
+### Features
+- Architect fix
+- Game list now have pagination feature
+- We can now ask for the get balance
+- We can now verify email
+
 ## Version 0.0.6
 ### Features
 - Architect fix
