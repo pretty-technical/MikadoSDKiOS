@@ -18,6 +18,6 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "MikadoSDK", 
+            name: "MikadoSDK",
             path: "MikadoSDK.xcframework")
     ])
