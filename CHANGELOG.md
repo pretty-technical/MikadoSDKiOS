@@ -4,6 +4,7 @@
 - Game list now have pagination feature
 - We can now ask for the get balance
 - We can now verify email
+- You can now download MikadoSDK with SPM
 
 ## Version 0.0.6
 ### Features
